@@ -1,0 +1,120 @@
+body{
+  background-color: aqua;
+
+}
+.content-container{
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+}
+.main-content{
+    width: 750px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  #FFFF;
+    box-shadow: 5px 5px 5px rgb(62, 62, 62);
+}
+.content-title{
+    background-color:  #FFFF;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+}
+.content-holder{
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.choices{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid black;
+}
+.btn_choices.selected{
+    background-color: chartreuse;
+    transition: all 0.5s ease ;
+    color: black;
+}
+/* Generating/Loading*/
+.loading-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.content-loading{
+    font-size: 24px;
+    font-weight: 600;
+    display: none;
+}
+/*Quiz Content*/
+.quiz-holder{
+    display: none;
+}
+.quiz-content{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+}
+.number_holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+     margin-bottom: 20px;
+}
+.number_holder p {
+    font-size: 5rem;
+    font-weight: 600;
+    margin: 0;
+}
+.ans_div{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+   
+}
+.ans_div input {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      font-size: 2rem;
+      text-align: center;
+      outline: none;
+      transition: border 0.3s;
+}
+
+.ans_div input:focus {
+    border-color: #4CAF50;
+}
+
+/* FOR DISPLAY RESULT */
+.result-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.result-content{
+    font-size: 3.2rem;
+    font-weight: 600;
+}
