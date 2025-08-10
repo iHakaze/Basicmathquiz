@@ -8,7 +8,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
 
 }
 .main-content{
@@ -20,14 +19,35 @@ body{
     align-items: center;
     background-color:  #FFFF;
     box-shadow: 5px 5px 5px rgb(62, 62, 62);
+    border-radius: 12px;
 }
 .content-title{
+    padding: 16px 0px 16px ;
     background-color:  #FFFF;
 }
+/*--------------------Timer---------------------------*/
+.timer-holder{
+    width: 100%;
+    height: 10px;
+    /* background-color: #ddd; */
+    overflow: hidden;
+    margin-bottom: 2px;
+    display: none;
+}
+.line-timer {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #04fc3e; /* YouTube red color  #d3fc04  #fce304  #ff8d01  #ff0101*/ 
+  box-shadow: 0 0 1px #04fc3e, 0 0 3px #04fc3e;
+  transition: width 0.1s ease, box-shadow 0.1s ease;
+  
+}
+
+
 .content{
     display: flex;
     justify-content: center;
-    border: 1px solid black;
     width: 100%;
     height: 100%;
 }
@@ -44,7 +64,6 @@ body{
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    border: 1px solid black;
 }
 .btn_choices.selected{
     background-color: chartreuse;
@@ -117,4 +136,9 @@ body{
 .result-content{
     font-size: 3.2rem;
     font-weight: 600;
+}
+.return_holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
